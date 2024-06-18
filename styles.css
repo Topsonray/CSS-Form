@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    background-image: url(jason-goodman-bzqU01v-G54-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    place-content: center;
+}
+
+body::before{
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+
+form{
+    padding: 2% 5%;
+    /* width:fit-content; */
+    width: 50vw;
+    background-color: rgba(221, 87, 25, 0.7);
+    /* opacity: 0.8; */
+    margin-top: 8%;
+    z-index: 2;
+    
+}
+
+h1{ text-align: center;
+    font-size: large;
+}
+
+p{ text-align: center;
+font-size: smaller;
+}
+
+input.box{
+    height: 40px;
+    width: 100%;
+    /* width: 400; */
+    border-radius: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+select{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+input[type="checkbox"], 
+input[type="radio"]{
+    margin-right:10px;
+}
+
+textarea{
+    width: 100%;
+    height: 80px;
+    padding-left: 10px;
+}
+
+button{
+    background-color: green;
+    width: 100%;
+    padding:3% 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width:500px) {
+    form{
+        width: 100vw;
+    }
+}
